@@ -1,0 +1,99 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8"/>
+        <title></title>
+      <style>
+        .title{
+            color:#fff;
+            background-color:#195cd6;
+            text-align:center;
+        }
+        .link{
+            color:#fff;
+            text-decoration:none;
+        }
+        .link :hover{
+         cursor:pointer;
+         color:orange;
+        }
+        .sub-title{
+            color:#195cd6;
+            text-align:center;
+        }
+        .footer{
+            height:20%;
+            text-align:center; 
+            color:#fff;            ;
+            background-color:#0b3e6a;
+            position:relative;
+            margin-top:10vh;
+        }
+        .footer-links{
+            display:flex;
+            text-align:center;
+            flex:wrap;
+            flex-direction:row;
+        }
+        .footer-links li{
+            text-decoration:none;
+            text-align:center;
+        }
+        .img-stats{
+         margin-left: 15%;
+        }
+        .regression{
+            position: relative;
+            text-align: center;
+        }
+      </style>
+        </head>
+        <body>
+       
+       <h1 class="title"><a class="link" href="/">Health Facilities Capacity Assessment</a></h1>
+        
+         <!-- cluster -->
+        <div>
+            <iframe style="background: #F1F5F4;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);width: 100vw;height: 100vh;" width="100%" height="400"
+             src="https://charts.mongodb.com/charts-project-0-pzeir/embed/dashboards?id=cf3066ec-7bc3-49c0-a3ad-14d754dea2bf&theme=light&autoRefresh=true&maxDataAge=3600&showTitleAndDesc=false&scalingWidth=fixed&scalingHeight=fixed"></iframe>
+        </div>
+        <h1 class='sub-title'>Time series on visits to Health Facilities</h1>
+        <div class='section'>
+         <img style="width:400px; height:400px" src="data/kemri/gatanga.gif"></img>
+         <img style="width:400px; height:400px" src="data/kemri/kandara.gif"></img>
+         <img style="width:400px; height:400px" src="data/kemri/KANGEMA.gif"></img>
+        </div>
+         
+        <div class='section'>
+            <img style="width:400px; height:400px" src="data/kemri/KIGUMO.gif"></img>
+            <img style="width:400px; height:400px" src="data/kemri/KIHARU.gif"></img>
+            <img style="width:400px; height:400px" src="data/kemri/MATHIOYA.gif"></img>
+           </div>
+        <div style="text-align: center;">
+            <h1 class='sub-title'>Regression Analysis</h1>
+        <img class="regression" style="width:1000px; height:400px" src="data/kemri/regression.jpeg"></img>
+        </div>
+        
+        <!--
+            <img style="width:150px; height:150px" src="data/kemri/.jpg"></img>
+            
+        --> 
+        <h1 class='sub-title'>Health Facility statistics in Murang'a</h1>
+        <img class="img-stats" style="width:450px; height:400px" src="data/kemri/stats.jpeg"></img>
+        <img  style="width:450px; height:400px" src="data/kemri/stats01.jpeg"></img>
+        <img class="img-stats" style="width:450px; height:400px" src="data/kemri/stats02.jpeg"></img>
+        <img  style="width:450px; height:400px" src="data/kemri/stats03.jpeg"></img>
+        <h1 class='sub-title'>Resources for further studies</h1>
+        <embed  src="data/kemri/Geo_analysis.pdf" type="application/pdf" width="50%"/>
+        <embed src="data/kemri/pop_totals.pdf" type="application/pdf" width="40%"/>
+        <embed src="data/kemri/analysis_mrg.pdf" type="application/pdf" width="60%"/>
+        <embed  src="data/kemri/levels_analysis.pdf" type="application/pdf" width="20%"/>
+        <embed src="data/kemri/mrg_analysis.pdf" type="application/pdf" width="100%"/>
+        </body>
+        <footer class="footer">
+            <div class="footer-links">
+                
+            </div>
+        copyright@2022
+        </footer>
+    </html>
