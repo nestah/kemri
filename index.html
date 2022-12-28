@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html">
+              <span class="material-icons-outlined">dashboard</span> Overview
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="levels.html">
+              <span class="material-icons-outlined">poll</span> Hospital Levels
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="status.html">
+              <span class="material-icons-outlined">poll</span> Status
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="functionality.html">
+              <span class="material-icons-outlined">poll</span> Functionality
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="space.html">
+              <span class="material-icons-outlined">poll</span> Space
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="agency.html">
+              <span class="material-icons-outlined">poll</span> Agency
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="capacity.html">
+              <span class="material-icons-outlined">poll</span> Capacity
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="data_transformed_files/sheet001.htm">
+              <span class="material-icons-outlined">settings</span> Data
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Murang'a County Health Facilities Capacity Assessment</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Sub-counties</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">8</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> Hospital Visits 2011</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">1486593</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Hospital Visits 2012</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">1430835</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Hospital Visits 2013</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">1667492</span>
+          </div>
+
+        </div>
+<section>
+  <div class="charts">
+
+    <div class="charts-card">
+      <p class="chart-title">Total number of Hospitals per Sub-county</p>
+      <div id="bar-chart"></div>
+    </div>
+
+    <div class="charts-card">
+      <p class="chart-title">Trend of Hospital Visits</p>
+      <div id="area-chart"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Trend of Hospital Visits</p>
+      <div class="img">
+        <center><img src="images/trend.jpg" alt="centered image" height="" width=""> </center>
+        <!-- <img src="images/trend.jpg" alt=""> -->
+      </div>
+      <div>
+        <p>Overall, the data shows an increase in total hospital visits from 2011 to 2013 in all subcounties. 
+          Gatanga had the highest increase, with total hospital visits increasing by 78485 from 2011 to 2013. 
+          Kandara had the second highest increase, with total hospital visits increasing by 62565 from 2011 to 2013. 
+          Kiharu had the third highest increase, with total hospital visits increasing by 87384 from 2011 to 2013.</p>
+
+        <p>In terms of percentage increase, Kiharu had the highest percentage increase in total hospital visits from 2011 to 2013, with a 328.6% increase. 
+          Gatanga had the second highest percentage increase, with a 142.6% increase. 
+          Kandara had the third highest percentage increase, with a 138.2% increase.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Facility Distribution in Murang'a in 2013</p>
+      <div class="img">
+        <center><img src="images/facility-distr.jpg" alt="centered image" height="500" width="750"> </center>
+        
+      </div>
+      <div>
+        <p>There is an uneven distribution of healthcare facilities in Muranga County, with some sub-counties having significantly more facilities than others. 
+          Gatanga has the most facilities with 27, followed by Kandara with 22 and Kangema with 18. Kigumo and Kiharu both have 15 facilities, 
+          while Mathioya and Muranga South have the fewest with 11 and 15 facilities respectively. 
+          It is important for there to be a balanced distribution of healthcare facilities in a region to ensure that all residents have access to quality healthcare.
+           It may be necessary to consider expanding or building new facilities in sub-counties with fewer resources in order to achieve universal health coverage in Muranga County.</p>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+          
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

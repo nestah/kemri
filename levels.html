@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Levels</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html">
+              <span class="material-icons-outlined">dashboard</span> Overview
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="levels.html">
+              <span class="material-icons-outlined">poll</span> Hospital Levels
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="status.html">
+              <span class="material-icons-outlined">poll</span> Status
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="functionality.html">
+              <span class="material-icons-outlined">poll</span> Functionality
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="space.html">
+              <span class="material-icons-outlined">poll</span> Space
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="agency.html">
+              <span class="material-icons-outlined">poll</span> Agency
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="capacity.html">
+              <span class="material-icons-outlined">poll</span> Capacity
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="data_transformed_files/sheet001.htm">
+              <span class="material-icons-outlined">settings</span> Data
+            </a>
+          </li>
+          
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Healthcare Facility Levels Analysis in Murang'a</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Total Facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">132</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Dispensaries</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">103</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Health Centers</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">24</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Sub-district Facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">5</span>
+          </div>
+
+        </div>
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Comparison of Number of levels of Hospitals per Sub-county</p>
+      <div>
+        <center><img src="images/levels.jpg" alt="centered image" ></center>
+      </div>
+      <div>
+        <p>
+          Gatanga has the most facilities, with 17 dispensaries, 5 health centers, and 1 sub-district hospital. 
+          Kandara and Kiharu have the second most facilities, with 21 dispensaries and 19 dispensaries, respectively. 
+          Kangema, Kigumo, and Muthioya have a moderate number of facilities, with 14, 11, and 8 dispensaries, respectively. 
+          Muranga south has the least number of facilities, with only 12 dispensaries.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Dispensary Visits per sub-county </p>
+      <div>
+        <center><img src="images/dispensary_visits.jpg" alt=""></center>
+        
+      </div>
+      <div>
+        <p>Sub-counties with a higher number of dispensaries tend to have a higher number of visits to healthcare facilities. 
+          For example, Gatanga, Kandara, and Kiharu, which have 17, 21, and 19 dispensaries, respectively, also have the highest number of visits to healthcare facilities in 2011, 2012, and 2013.</p>
+        
+        <p>On the other hand, sub-counties with a lower number of dispensaries tend to have a lower number of visits to healthcare facilities. 
+          For example, Muthioya, which has only 8 dispensaries, also has the lowest number of visits to healthcare facilities in 2011, 2012, and 2013. 
+          Muranga south, which has 12 dispensaries, also has a lower number of visits compared to the other sub-counties.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Health Center Visits per sub-county </p>
+      <div>
+        <center><img src="images/HC_visits.jpg" alt=""></center>
+      </div>
+      <div>
+        <p>It is worth noting that Kandara does not have any health centers and also has a very low number of visits to healthcare facilities in 2011, 2012, and 2013. 
+          This may suggest that the availability of health centers is an important factor in determining the number of visits to healthcare facilities in each sub-county.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Sub-district facility Visits per sub-county </p>
+      <div>
+        <center><img src="images/SD_visits.jpg" alt=""></center>
+      </div>
+      <div>
+        <p>Gatanga, Kandara, Kangema, Kiharu, and Muranga south, which all have a sub-district hospital, 
+          also have relatively high numbers of visits to healthcare facilities in 2011, 2012, and 2013.</p>
+
+        <p>On the other hand, sub-counties without a sub-district hospital tend to have a lower number of visits to healthcare facilities. 
+          For example, Kigumo and Muthioya, which do not have a sub-district hospital, also have a very low number of visits to healthcare facilities in 2011, 2012, and 2013.</p>
+
+        <p>It is worth noting that the number of visits to healthcare facilities in sub-counties with a sub-district hospital is not consistently high across all years. 
+          For example, Gatanga and Kandara have relatively high numbers of visits in 2011 and 2012, but a lower number of visits in 2013.
+           Similarly, Kangema and Kiharu have relatively high numbers of visits in 2011 and 2013, but a lower number of visits in 2012.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

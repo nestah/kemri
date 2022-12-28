@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Status Dashboard</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+            <ul class="sidebar-list">
+              <li class="sidebar-list-item">
+                <a href="index.html">
+                  <span class="material-icons-outlined">dashboard</span> Overview
+                </a>
+              </li>
+              
+              <li class="sidebar-list-item">
+                <a href="levels.html">
+                  <span class="material-icons-outlined">poll</span> Hospital Levels
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="status.html">
+                  <span class="material-icons-outlined">poll</span> Status
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="functionality.html">
+                  <span class="material-icons-outlined">poll</span> Functionality
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="space.html">
+                  <span class="material-icons-outlined">poll</span> Space
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="agency.html">
+                  <span class="material-icons-outlined">poll</span> Agency
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="capacity.html">
+                  <span class="material-icons-outlined">poll</span> Capacity
+                </a>
+              </li>
+
+              <li class="sidebar-list-item">
+                <a href="data_transformed_files/sheet001.htm">
+                  <span class="material-icons-outlined">settings</span> Data
+                </a>
+              </li>
+              
+            </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Analysis of Physical Status of Healthcare Facilities in Murang'a</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Good physical status</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">108</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Fair physical status</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">24</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Owned by County government</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">128</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Community Based Facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">4</span>
+          </div>
+
+        </div>
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Physical Status of Hospitals per Sub-county</p>
+      <div>
+        <center><img src="images/ps_analysis.jpg" alt="" ></center>
+      </div>
+      <div>
+        <p>We define physical status of the health facility in terms of  building structure, floors, furniture and plants.
+          <br>
+          <br>
+          Overall, the data suggests that the physical status of healthcare facilities in the sub-counties is not uniform, with some sub-counties having a higher percentage of facilities with a good physical status and others having a lower percentage. 
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title"> Physical Status Based on Ownership </p>
+      <div>
+        <center><img src="images/owner_ps.jpg" alt=""></center>
+      </div>
+      <div>
+        <p>
+          Out of the 127 facilities owned by the county government, 104 are classified as being in good physical condition, while 23 are classified as being in fair physical condition. Out of the 4 facilities owned by the community,
+           3 are classified as being in good physical condition, while 1 is classified as being in fair physical condition.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

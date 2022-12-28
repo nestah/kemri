@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Capacity</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html">
+              <span class="material-icons-outlined">dashboard</span> Overview
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="levels.html">
+              <span class="material-icons-outlined">poll</span> Hospital Levels
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="status.html">
+              <span class="material-icons-outlined">poll</span> Status
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="functionality.html">
+              <span class="material-icons-outlined">poll</span> Functionality
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="space.html">
+              <span class="material-icons-outlined">poll</span> Space
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="agency.html">
+              <span class="material-icons-outlined">poll</span> Agency
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="capacity.html">
+              <span class="material-icons-outlined">poll</span> Capacity
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="data_transformed_files/sheet001.htm">
+              <span class="material-icons-outlined">settings</span> Data
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Analysis of Operational Outputs (Throughput) In Relation To Available Capacity in That Facility.</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Total facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">132</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> Sufficiently-installed capacity facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">7</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> Minimum capacity coded facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">98</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> No-capacity facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">27</span>
+          </div>
+
+        </div>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Analysis of Capacity</p>
+      <div>
+        <center><img src="images/capacity.jpg" alt=""></center>
+      </div>
+      <div>
+        
+        <p>Majority of healthcare facilities in the sub-counties have "minimum capacity," 
+          with 98 out of 132 facilities falling into this category. A smaller number of facilities have "no capacity" (27 out of 132), 
+          while an even smaller number have "sufficient installed capacity" (7 out of 132).</p>
+
+        <p>In terms of the specific sub-counties, Gatanga has the highest number of facilities with "minimum capacity" (17 out of 23), 
+          followed by Kandara (21 out of 22) and Kiharu (22 out of 27). Mathioya has the highest percentage of facilities with "no capacity," 
+          with 5 out of 12 facilities falling into this category.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section>
+  <!--Table-->
+  <div class="recent-grid">
+   <div class="projects">
+       <div class="card">
+           <div class="card-header">
+               <h3>Sufficiently-installed facilities</h3>
+
+           </div>
+
+           <div class="card-body">
+               <div class="table-responsive">
+                   <table width="100%">
+                       <thead>
+                           <tr>
+                               <td>Sub-county</td>
+                               <td>Facility-coded</td>
+                               <td>Level</td>
+                               <td>Capacity</td>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td>Gatanga</td>
+                               <td>GAT_011</td>
+                               <td>Health Center</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+
+                           <tr>
+                               <td>Gatanga</td>
+                               <td>GAT_014</td>
+                               <td>Sub-district</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+                           
+                           <tr>
+                               <td>Kangema</td>
+                               <td>KAG_008</td>
+                               <td>Sub-district</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>Kiharu</td>
+                               <td>KIG_006</td>
+                               <td>Sub-district</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+
+                           <tr>
+                               <td>Muranga South</td>
+                               <td>SOU_009</td>
+                               <td>Health Center</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>Muranga South</td>
+                               <td>SOU_010</td>
+                               <td>Sub-district</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>Muranga South</td>
+                               <td>SOU_011</td>
+                               <td>Health Center</td>
+                               <td>
+                                   <span class="status green"></span> Sufficient
+                               </td>
+                           </tr>
+
+
+                       </tbody>
+                   </table>
+               </div>
+           </div>
+         
+       </div>
+   </div>
+ 
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Spatial Analysis of No-Capacity Facilities</p>
+      <div>
+        <center><img src="images/cap_no.jpg" alt="centered image" height="500" width="750"></center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Spatial Analysis of Minimum Capacity Facilities</p>
+      <div>
+        <center><img src="images/cap_min.jpg" alt="centered image" height="500" width="750"></center>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Spatial Analysis of Sufficient Capacity Facilities</p>
+      <div>
+        <center><img src="images/cap_sufficient.jpg" alt="centered image" height="500" width="750"></center>
+      </div>
+    </div>
+  </div>
+</section>
+          
+
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

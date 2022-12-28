@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Space</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+ 
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html">
+              <span class="material-icons-outlined">dashboard</span> Overview
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="levels.html">
+              <span class="material-icons-outlined">poll</span> Hospital Levels
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="status.html">
+              <span class="material-icons-outlined">poll</span> Status
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="functionality.html">
+              <span class="material-icons-outlined">poll</span> Functionality
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="space.html">
+              <span class="material-icons-outlined">poll</span> Space
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="agency.html">
+              <span class="material-icons-outlined">poll</span> Agency
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="capacity.html">
+              <span class="material-icons-outlined">poll</span> Capacity
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="data_transformed_files/sheet001.htm">
+              <span class="material-icons-outlined">settings</span> Data
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Murang'a County Health Facilities Capacity Assessment Based on Space</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Sub-counties</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">8</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Total Facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">132</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Facilities with Space</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">123</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Facilities without Space</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">9</span>
+          </div>
+
+        </div>
+<section>
+  <div class="img-charts">
+
+    <div class="img-charts-card">
+      <p class="chart-title">Analysis of space per Sub-county</p>
+
+      <center><p>Space represent land available for future expansion</p></center>
+      <div>
+        <center><img src="images/space.jpg" alt=""></center>
+      </div>
+      <p>Kiharu has the highest number of healthcare facilities with space for expansion, with 27 out of 27 facilities having space.
+         Gatanga, Kandara, and Muthioya also have a high percentage of healthcare facilities with space for expansion, with 23 out of 23 facilities, 21 out of 22 facilities, 
+         and 10 out of 11 facilities, respectively, having space.</p>
+
+      <p>On the other hand, Kangema, Kigumo, and Muranga south have a lower percentage of healthcare facilities with space for expansion. 
+        Kangema has 16 out of 18 facilities with space, Kigumo has 12 out of 15 facilities with space, and Muranga south has 13 out of 15 facilities with space.</p>
+      
+    </div>
+
+  </div>
+</section>
+
+<section>
+   <!--Table-->
+   <div class="recent-grid">
+    <div class="projects">
+        <div class="card">
+            <div class="card-header">
+                <h3>Facilities without space for future expansion</h3>
+
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Sub-county</td>
+                                <td>Facility-coded</td>
+                                <td>Level</td>
+                                <td>Space</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kandara</td>
+                                <td>KAD_010</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kangema</td>
+                                <td>KAG_015</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kangema</td>
+                                <td>KAG_017</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kigumo</td>
+                                <td>KIG_006</td>
+                                <td>Health Center</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Kigumo</td>
+                                <td>KIG_009</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mathioya</td>
+                                <td>MAT_002</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Murang'a South</td>
+                                <td>SOU_002</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Murang'a South</td>
+                                <td>SOU_004</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Murang'a South</td>
+                                <td>SOU_007</td>
+                                <td>Dispensary</td>
+                                <td>
+                                    <span class="status red"></span> No
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+  
+</section>
+        
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

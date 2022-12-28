@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Functionality</title>
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!-- Header -->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="search-wrapper">
+          <span class="las la-search"></span>
+          <input type="search" placeholder="Search..." />
+      </div>
+        
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Sidebar -->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> MURANG'A
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="index.html">
+              <span class="material-icons-outlined">dashboard</span> Overview
+            </a>
+          </li>
+          
+          <li class="sidebar-list-item">
+            <a href="levels.html">
+              <span class="material-icons-outlined">poll</span> Hospital Levels
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="status.html">
+              <span class="material-icons-outlined">poll</span> Status
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="functionality.html">
+              <span class="material-icons-outlined">poll</span> Functionality
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="space.html">
+              <span class="material-icons-outlined">poll</span> Space
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="agency.html">
+              <span class="material-icons-outlined">poll</span> Agency
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="capacity.html">
+              <span class="material-icons-outlined">poll</span> Capacity
+            </a>
+          </li>
+
+          <li class="sidebar-list-item">
+            <a href="data_transformed_files/sheet001.htm">
+              <span class="material-icons-outlined">settings</span> Data
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Sidebar -->
+
+      <!-- Main -->
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">Murang'a County Health Facilities Capacity Assessment Based on Functionality</p>
+        </div>
+
+        <div class="main-cards">
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Good functionality facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">10</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary"> Fair functionality facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">53</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Average functionality facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">21</span>
+          </div>
+
+          <div class="card">
+            <div class="card-inner">
+              <p class="text-primary">Below Average functionality facilities</p>
+              
+            </div>
+            <span class="text-primary font-weight-bold">48</span>
+          </div>
+
+        </div>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Analysis based on Functionality</p>
+      <center><p>Here, "Functionality" is defined as whether the facilities are offering the basic 
+        minimum health services as prescribed by national GoK policy & guidelines for various categories of health facilities.</p></center>
+      <div>
+        <center><img src="images/functionality.jpg" alt=""></center>
+      </div>
+      <div>
+        
+        <p>There is no facility in Kigumo and Mathioya that have Good functionality.</p>
+
+        <p>In terms of the number of healthcare facilities in each functional category, 
+          Gatanga has the most healthcare facilities classified as being in good functional condition, with 2 facilities. 
+          Kandara and Kiharu have the most healthcare facilities classified as being in below functional condition, with 7 facilities each. 
+          Kiharu also has the most healthcare facilities classified as being in fair functional condition, with 12 facilities. 
+          Kandara has the most healthcare facilities classified as being in average functional condition, with 12 facilities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="img-charts">
+    <div class="img-charts-card">
+      <p class="chart-title">Sum of functionality based on levels</p>
+      <div>
+        <center><img src="images/fn_levels.jpg" alt=""></center>
+      </div>
+      <div>
+        <p>In terms of the types of facilities, there are 103 dispensaries, 24 health centers, and 5 sub-district hospitals. 
+          The majority of the facilities classified as being in "below" functionality are dispensaries (41 out of 48), 
+          while the majority of the facilities classified as being in "good" functionality are sub-district hospitals (5 out of 10).</p>
+        
+        <p>Overall, these results suggest that there may be a need to prioritize upgrading or improving the functionality of the dispensaries in the sub-counties, 
+          as a larger proportion of these facilities are classified as being in "below" functionality compared to the other types of facilities. 
+          It may also be worth considering why the sub-district hospitals have a higher percentage of "good" functionality and 
+          whether these practices can be implemented in other types of facilities to improve their functionality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+      </main>
+      <!-- End Main -->
+
+    </div>
+
+    <!-- Scripts -->
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
